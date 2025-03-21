@@ -1,0 +1,21 @@
+// Base
+@import "./base/reset"; // Сброс стилей
+@import "./base/vars"; // Определяем переменные
+@import "./base/mixins"; // Файл для миксинов
+@import "./base/base"; // Общие стили для всей странице(сайта)
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/nav-icon";
+@import "./blocks/info";
+@import "./blocks/benefits";
+@import "./blocks/appartments";
+@import "./blocks/card";
+@import "./blocks/cta";
+@import "./blocks/form";
+@import "./blocks/video";
+@import "./blocks/section-map";
+@import "./blocks/yandex-map";
+@import "./blocks/feedback";
+@import "./blocks/footer";

@@ -1,0 +1,33 @@
+.appartments {
+    position: relative;
+
+    &::before {
+        content: 'III';
+        //Отступаем половину экрана и половину контейнера(1110/2 = 555)
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%);
+        @include decorNumber;
+    }
+}
+
+.appartments__title {
+    margin-bottom: 88px;
+
+    @include mediaTablet {
+        margin-bottom: 44px;
+    }
+}
+
+.appartments__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+    gap: 30px;
+
+    @include mediaTablet {
+        //Минимальный размер экрана под адаптив 290px, Ширина экрана 320 - (15 * 2) = 290
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+}
